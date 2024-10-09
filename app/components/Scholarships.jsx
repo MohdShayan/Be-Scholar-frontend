@@ -36,7 +36,7 @@ const Scholarships = () => {
   useEffect(() => {
     const fetchScholarships = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/scholarship");
+        const response = await axios.get("https://be-scholar-backend.vercel.app/api/scholarship");
         setScholarships(response.data);
       } catch (err) {
         setError("Error fetching scholarships");
