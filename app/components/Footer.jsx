@@ -1,20 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
 const Footer = () => {
-  const { toggleColorMode } = useColorMode();
-
-  const bgColor = useColorModeValue('gray.200', 'gray.800');
-  const textColor = useColorModeValue('black', 'white');
-  
   return (
-    <>
-    <Box className='flex flex-col md:flex-row lg:flex-row bg-gray-200 shadow-md justify-center items-center shadow-black'
-      bg={bgColor} 
-      color={textColor} 
-      py={4}
-    > 
+    <div className='flex flex-col md:flex-row lg:flex-row bg-gray-200 shadow-md justify-center items-center shadow-black'> 
         <div className="foot-left">
         <Image
           src="https://drive.google.com/uc?export=download&id=1Mw0EcZHPZRRmK6SPwtBjMTNqYlaizVmL"
@@ -31,8 +20,7 @@ const Footer = () => {
             <Link href="/pages/contact">Go to Contact</Link>
         </div>
         </div>
-    </Box>
-      </>
+    </div>
   )
 }
 
