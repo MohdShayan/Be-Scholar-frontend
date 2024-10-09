@@ -27,7 +27,7 @@ const FormComponent = () => {
     console.log("Form data:", formData); 
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/students`,
+        `https://be-scholar-backend.vercel.app/api/students`,
         formData
       );
       console.log("Student created:", response.data);
