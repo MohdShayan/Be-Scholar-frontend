@@ -1,0 +1,11 @@
+/* Footer.css */
+.footer-light {
+    background-color: #e2e8f0; /* Light gray */
+    color: #1a202c; /* Dark text */
+  }
+  
+  .footer-dark {
+    background-color: #2d3748; /* Dark gray */
+    color: #f7fafc; /* Light text */
+  }
+  
