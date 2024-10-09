@@ -9,6 +9,7 @@ const Footer = () => {
   const textColor = useColorModeValue('black', 'white');
   
   return (
+    <>
     <Box className='flex flex-col md:flex-row lg:flex-row bg-gray-200 shadow-md justify-center items-center shadow-black'
       bg={bgColor} 
       color={textColor} 
@@ -31,6 +32,7 @@ const Footer = () => {
         </div>
         </div>
     </Box>
+      </>
   )
 }
 
